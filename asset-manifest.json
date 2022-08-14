@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/begging/static/css/main.46e1d201.css",
-    "main.js": "/begging/static/js/main.da7d9d0f.js",
+    "main.css": "/begging/static/css/main.a4b9c215.css",
+    "main.js": "/begging/static/js/main.9e910481.js",
     "static/js/787.fce825c4.chunk.js": "/begging/static/js/787.fce825c4.chunk.js",
     "static/media/ING_logo2.svg": "/begging/static/media/ING_logo2.8bf229403b0caa723c892b602f37bbac.svg",
     "static/media/paypal_qr.png": "/begging/static/media/paypal_qr.7d948e4e835a2334fc29.png",
     "static/media/satispay_logo.svg": "/begging/static/media/satispay_logo.2406d8e3ec2b91b7118cc62e60e08e31.svg",
     "static/media/paypal_logo.svg": "/begging/static/media/paypal_logo.8f3ac3493bd48e56fe8bbcaa1ae4de2c.svg",
     "index.html": "/begging/index.html",
-    "main.46e1d201.css.map": "/begging/static/css/main.46e1d201.css.map",
-    "main.da7d9d0f.js.map": "/begging/static/js/main.da7d9d0f.js.map",
+    "main.a4b9c215.css.map": "/begging/static/css/main.a4b9c215.css.map",
+    "main.9e910481.js.map": "/begging/static/js/main.9e910481.js.map",
     "787.fce825c4.chunk.js.map": "/begging/static/js/787.fce825c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46e1d201.css",
-    "static/js/main.da7d9d0f.js"
+    "static/css/main.a4b9c215.css",
+    "static/js/main.9e910481.js"
   ]
 }
