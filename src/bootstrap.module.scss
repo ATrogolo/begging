@@ -1,0 +1,66 @@
+button.satispayBtn {
+  background: #f94c43;
+  border: 1px solid #f94c43;
+  border-radius: 1.5rem;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s,
+    border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  padding: 0.7rem 1.5rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+button.satispayBtn:active,
+button.satispayBtn:focus,
+button.satispayBtn:hover {
+  background-color: #f94c43;
+  border: 1px solid #f94c43;
+}
+
+button.satispayBtn:focus {
+  box-shadow: none !important;
+}
+
+button.satispayBtn:hover {
+  box-shadow: 0 0 0 0.25rem rgb(249, 76, 67, 0.5) !important;
+}
+
+button.paypalBtn {
+  background: #142c8e;
+  border: 1px solid #142c8e;
+  border-radius: 1.5rem;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s,
+    border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  font-weight: bold;
+  padding: 0.625rem 1.875rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+button.paypalBtn:active,
+button.paypalBtn:focus,
+button.paypalBtn:hover {
+  background-color: #142c8e;
+  border: 1px solid #142c8e;
+}
+
+button.paypalBtn:hover {
+  box-shadow: 0 0 0 0.25rem #142c8e80 !important;
+}
+
+.ibanInput:focus {
+  border-color: #ff6200 !important;
+  box-shadow: 0 0 0 0.25rem #ff620050 !important;
+}
+
+.tooltip {
+  color: #ff6200;
+  text-align: center;
+}
