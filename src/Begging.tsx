@@ -2,6 +2,13 @@ import classNames from "classnames"
 import { useState } from "react"
 import classes from "./bootstrap.module.scss"
 
+import satispay_logo from "./assets/images/satispay_logo.svg"
+import satispay_qr from "./assets/images/satispay_qr.png"
+
+import paypal_logo from "./assets/images/paypal_logo.svg"
+import paypal_qr from "./assets/images/paypal_qr.png"
+import ing_logo from "./assets/images/ING_logo2.svg"
+
 const IBAN_INPUT_ID = "iban-input"
 const DURATION = 5000
 
@@ -36,14 +43,14 @@ function BeggingPage() {
             <div className="pb-lg-4">
               <img
                 className="col-6"
-                src="/images/satispay_logo.svg"
+                src={satispay_logo}
                 alt="Satispay logo"
               ></img>
             </div>
 
             <div className="row d-flex justify-content-center">
               <img
-                src="images/satispay_qr.png"
+                src={satispay_qr}
                 className="col-10 col-sm-8 pb-2"
                 alt="Satispay QR"
               ></img>
@@ -67,17 +74,13 @@ function BeggingPage() {
           <hr className="d-lg-none " />
 
           <div className="col mb-4">
-            <div className="pb-lg-4">
-              <img
-                className="col-6"
-                src="/images/paypal_logo.svg"
-                alt="PayPal logo"
-              ></img>
+            <div className="pb-lg-3">
+              <img className="col-6" src={paypal_logo} alt="PayPal logo"></img>
             </div>
 
             <div className="row d-flex justify-content-center">
               <img
-                src="images/paypal_qr.png"
+                src={paypal_qr}
                 className="col-10 col-sm-8 pb-2"
                 alt="PayPal QR"
               ></img>
@@ -102,15 +105,13 @@ function BeggingPage() {
 
           <div className="col mb-4">
             <div className="pb-lg-4">
-              <img
-                className="col-6"
-                src="/images/ing_logo.svg"
-                alt="ING logo"
-              ></img>
+              <img className="col-6" src={ing_logo} alt="ING logo"></img>
             </div>
 
-            <div className="text-start mt-4">
-              <label htmlFor={IBAN_INPUT_ID}>IBAN</label>
+            <div className="text-start mt-4 mt-lg-0">
+              <label htmlFor={IBAN_INPUT_ID} className={classes.ibanLabel}>
+                IBAN
+              </label>
 
               <input
                 id={IBAN_INPUT_ID}
