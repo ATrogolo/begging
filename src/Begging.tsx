@@ -36,7 +36,7 @@ function BeggingPage() {
   return (
     <>
       <div className="container-fluid px-4 py-5 " id="featured-3">
-        <h2 className="pb-2 border-bottom">Select a payment method</h2>
+        <h2 className="pb-5 border-bottom">Choose a payment method</h2>
 
         <div className="row g-4 py-4 row-cols-1 row-cols-lg-3">
           <div className="col mb-4">
@@ -108,10 +108,8 @@ function BeggingPage() {
               <img className="col-6" src={ing_logo} alt="ING logo"></img>
             </div>
 
-            <div className="text-start mt-4 mt-lg-0">
-              <label htmlFor={IBAN_INPUT_ID} className={classes.ibanLabel}>
-                IBAN
-              </label>
+            <div className="text-centered mt-4 mt-lg-0">
+              <label htmlFor={IBAN_INPUT_ID}>IBAN</label>
 
               <input
                 id={IBAN_INPUT_ID}
