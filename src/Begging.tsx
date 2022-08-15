@@ -9,6 +9,7 @@ import paypal_logo from "./assets/images/paypal_logo.svg"
 import paypal_qr from "./assets/images/paypal_qr.png"
 import ing_logo from "./assets/images/ING_logo2.svg"
 
+const IBAN = "IT04T0347501605CC0010654343"
 const IBAN_INPUT_ID = "iban-input"
 const DURATION = 5000
 
@@ -16,15 +17,7 @@ function BeggingPage() {
   const [isIBANCopied, setIsIBANCopied] = useState(false)
 
   function copyToClipboard() {
-    /* Get the text field */
-    const copyText: any = document.getElementById(IBAN_INPUT_ID)
-
-    /* Select the text field */
-    copyText.select()
-    copyText.setSelectionRange(0, 99999) /* For mobile devices */
-
-    /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value)
+    navigator.clipboard.writeText(IBAN)
 
     setIsIBANCopied(true)
 
@@ -36,7 +29,7 @@ function BeggingPage() {
   return (
     <>
       <div className="container-fluid px-4 py-5 " id="featured-3">
-        <h2 className="pb-5 border-bottom">Choose a payment method</h2>
+        <h1 className="pb-5 border-bottom display-5 fw-bold">Grazie 😉</h1>
 
         <div className="row g-4 py-4 row-cols-1 row-cols-lg-3">
           <div className="col mb-4">
@@ -109,20 +102,28 @@ function BeggingPage() {
             </div>
 
             <div className="text-centered mt-4 mt-lg-0">
-              <label htmlFor={IBAN_INPUT_ID}>IBAN</label>
-
-              <input
+              <span className={classes.ibanLabel}>IBAN</span>
+              <div
                 id={IBAN_INPUT_ID}
-                type="text"
-                className={classNames("form-control fs-5", classes.ibanInput)}
-                readOnly
-                value="IT04T0347501605CC0010654343"
+                className={classNames(
+                  "form-control fs-4 mb-4",
+                  classes.ibanInput
+                )}
+              >
+                {IBAN}
+              </div>
+
+              <button
+                type="button"
+                className={classNames("btn btn-primary", classes.ingBtn)}
                 onClick={copyToClipboard}
-              />
+              >
+                Copia IBAN
+              </button>
 
               {isIBANCopied && (
                 <div className={classNames("mt-2", classes.tooltip)}>
-                  IBAN copied to clipboard
+                  IBAN copiato nella clipboard
                 </div>
               )}
             </div>
