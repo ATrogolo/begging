@@ -2,6 +2,10 @@ $satispay_red: #f94c43;
 $paypal_blue: #142c8e;
 $ing_orange: #ff6200;
 
+.thanks {
+  text-align: center;
+}
+
 button.satispayBtn {
   background: $satispay_red;
   border: 1px solid $satispay_red;

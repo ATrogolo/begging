@@ -1,15 +1,7 @@
-import "./App.css"
-import BeggingPage from "./Begging"
-
-import TestPage from "./Test"
+import Thanks from "./Thanks"
 
 function App() {
-  return (
-    <div className="App">
-      <BeggingPage />
-      {/* <TestPage /> */}
-    </div>
-  )
+  return <Thanks />
 }
 
 export default App

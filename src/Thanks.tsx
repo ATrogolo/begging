@@ -1,6 +1,6 @@
 import classNames from "classnames"
 import { useState } from "react"
-import classes from "./bootstrap.module.scss"
+import classes from "./thanks.module.scss"
 
 import satispay_logo from "./assets/images/satispay_logo.svg"
 import satispay_qr from "./assets/images/satispay_qr.png"
@@ -13,7 +13,7 @@ const IBAN = "IT04T0347501605CC0010654343"
 const IBAN_INPUT_ID = "iban-input"
 const DURATION = 5000
 
-function BeggingPage() {
+function Thanks() {
   const [isIBANCopied, setIsIBANCopied] = useState(false)
 
   function copyToClipboard() {
@@ -28,7 +28,10 @@ function BeggingPage() {
 
   return (
     <>
-      <div className="container-fluid px-4 py-5 " id="featured-3">
+      <div
+        className={classNames("container-fluid px-4 py-5", classes.thanks)}
+        id="featured-3"
+      >
         <h1 className="pb-5 border-bottom display-5 fw-bold">Grazie 😉</h1>
 
         <div className="row g-4 py-4 row-cols-1 row-cols-lg-3">
@@ -134,4 +137,4 @@ function BeggingPage() {
   )
 }
 
-export default BeggingPage
+export default Thanks
