@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/begging/static/css/main.81b24861.css",
+    "main.css": "/begging/static/css/main.69eec274.css",
     "main.js": "/begging/static/js/main.dc7f2fe5.js",
     "static/js/787.fce825c4.chunk.js": "/begging/static/js/787.fce825c4.chunk.js",
     "static/media/ING_logo2.svg": "/begging/static/media/ING_logo2.8bf229403b0caa723c892b602f37bbac.svg",
@@ -8,12 +8,12 @@
     "static/media/satispay_logo.svg": "/begging/static/media/satispay_logo.2406d8e3ec2b91b7118cc62e60e08e31.svg",
     "static/media/paypal_logo.svg": "/begging/static/media/paypal_logo.8f3ac3493bd48e56fe8bbcaa1ae4de2c.svg",
     "index.html": "/begging/index.html",
-    "main.81b24861.css.map": "/begging/static/css/main.81b24861.css.map",
+    "main.69eec274.css.map": "/begging/static/css/main.69eec274.css.map",
     "main.dc7f2fe5.js.map": "/begging/static/js/main.dc7f2fe5.js.map",
     "787.fce825c4.chunk.js.map": "/begging/static/js/787.fce825c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81b24861.css",
+    "static/css/main.69eec274.css",
     "static/js/main.dc7f2fe5.js"
   ]
 }
